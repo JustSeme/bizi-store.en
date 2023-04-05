@@ -1,0 +1,10 @@
+{
+  "name": "bizi-store",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "JustSemen",
+  "license": "MIT",
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
+}

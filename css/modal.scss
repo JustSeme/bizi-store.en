@@ -1,0 +1,188 @@
+.modal {
+    z-index: 2000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: visible;
+    & .modal__content {
+        display: block;
+    }
+}
+
+.modal.show .modal__content {
+    transform: translateY(0);
+}
+
+.modal__content {
+    display: none;
+    border: 3px solid #000000;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 0 25px;
+    padding-top: 20px;
+    padding-bottom: 34px;
+    background-color: #DAD0F8;
+    transform: translateY(-200px);
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+    &.form-1 {
+        max-width: 540px; 
+    }
+}
+
+.modal__header {
+    position: relative;
+    .modal__title__text {
+        font-size: 49px;
+        margin-bottom: 20px;
+    }
+    .modal__desc__text {
+        font-size: 20px;
+    }
+    .modal__response__text {
+        font-size: 20px;
+        color: #8647EA;
+    }
+    .modal__close-mobile__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+}
+
+.modal__body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    label {
+        color: #000000B2;
+    }
+    .input__wrapper {
+        position: relative;
+        
+        &.slider { 
+            margin-top: 9px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        label {
+            cursor: text;
+            position: absolute;
+            top: 5px;
+            color: #000000B2;
+            transition: all 0.3s ease-in-out;
+            pointer-events: visible;
+            &.hide {
+                transform: translateY(-19px);
+            }
+        }
+        input {
+            font-size: 15px;
+            border: none;
+            background-color: inherit;
+            width: 95%;
+            padding: 7.5px;
+            padding-left: 0;
+            border-bottom: 1px solid #000000;
+            &:active, &:focus {
+                outline: 0;
+            }
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+    .checkboxes__wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 13px;
+        margin-bottom: 20px;
+        .checkbox__item {
+            justify-content: left;
+            align-items: center;
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 20px;
+            color: #000000B2;
+            p {
+                margin-left: 7px;
+            }
+            input {
+                transition: all 0.4s ease-in-out;
+                cursor: pointer;
+                background: inherit;
+                height: 22px;
+                width: 22px;
+                appearance: none;
+                border: 2px solid black;
+                border-radius: 4px;
+                &:checked {
+                    outline: 6px solid black;
+                    outline-offset: -15px;
+                }
+            }
+        }
+    }
+}
+
+.modal__footer {
+    margin-top: 60px;
+    .modal__btn__wrapper {
+        button {
+            padding: 0px 40px 0px 40px;
+            height: 55px;
+            font-size: 20px;
+        }
+    }
+    img {
+        position: absolute;
+        bottom: -130px;
+        right: -100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .modal__content {
+        .modal__header {
+            .modal__title__text {
+                max-width: 435px;
+            }
+            .modal__close-mobile__icon {
+                display: block;
+            }
+        }
+        .modal__footer {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-height: 870px) {
+    .modal-1, .modal-2 {
+        .modal__content {
+            .modal__footer {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

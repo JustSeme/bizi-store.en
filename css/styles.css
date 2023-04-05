@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  height: 75px;
+  padding: 10px 70px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+section {
+  margin: 0 120px;
+}
+
+.header__content {
+  display: flex;
+  margin: 15px 120px;
+  align-items: center;
+  justify-content: center;
+}
+.header__content .header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__content .header__menu {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+  justify-content: right;
+  align-items: center;
+}
+.header__content .header__menu a {
+  margin-left: 40px;
+}
+.header__content .header__menu button {
+  margin-left: 75px;
+  height: 45px;
+  padding: 5px 20px;
+}
+
+#solutions {
+  margin: 0;
+  padding: 0 120px;
+  padding-top: 120px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+#solutions .solutions__title__text {
+  margin-bottom: 74px;
+}
+#solutions .solutions__slider__block {
+  margin-bottom: 71px;
+}
+#solutions .solutions__button__popup {
+  width: 565px;
+  height: 75px;
+}
+#solutions .carousel-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  height: 624px;
+  padding: 28px 31px;
+  cursor: grab;
+}
+#solutions .carousel-item .slide__img__wrapper {
+  width: 100%;
+  height: 260px;
+}
+#solutions .carousel-item .slide__img__wrapper img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+#solutions .carousel-item .slide__marker__img {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#solutions .carousel-item .slide__info__block {
+  width: 100%;
+  text-align: left;
+}
+#solutions .carousel-item .slide__info__block .info__title__text {
+  margin-top: 15px;
+}
+#solutions .carousel-item .slide__info__block .info__item__text {
+  margin-top: 10px;
+}
+#solutions .carousel-item .slide__info__block .info__item__text .profit {
+  margin-top: 15px;
+}
+#solutions .carousel-item .slide__info__block .info__button__wrapper {
+  text-align: center;
+  margin-top: 27px;
+}
+#solutions .carousel-item .slide__info__block .info__button__wrapper .info__button {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  line-height: 0;
+}
+#solutions .owl-nav button {
+  width: 15%;
+  max-height: 50px;
+  margin: 20px;
+}
+
+#instruction {
+  position: relative;
+  margin-top: 112px;
+  margin-bottom: 91px;
+}
+#instruction .instruction__block__description {
+  display: flex;
+  align-items: right;
+  margin-bottom: 100px;
+}
+#instruction .instruction__block__description .description__desc__block {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+}
+#instruction .instruction__block__description .description__desc__block .description__title__text {
+  max-width: 530px;
+  margin-bottom: 70px;
+}
+#instruction .instruction__block__description .description__desc__block .description__title__text .chut-ponizhe {
+  line-height: 70px;
+}
+#instruction .instruction__block__description .instruction__img__wrapper {
+  margin-left: auto;
+}
+#instruction .instruction__block__description .instruction__img__wrapper img {
+  width: 100%;
+}
+#instruction .instruction__cards__wrapper {
+  text-align: center;
+}
+#instruction .instruction__cards__wrapper .cards__title__text {
+  margin-bottom: 110px;
+}
+#instruction .instruction__cards__wrapper .cards__flex__wrapper {
+  display: flex;
+  height: 230px;
+  margin-bottom: 68px;
+}
+#instruction .instruction__cards__wrapper .cards__flex__wrapper .cards__card__block {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 0 39px;
+  padding-top: 40px;
+  margin-left: 14px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#instruction .instruction__cards__wrapper .cards__flex__wrapper .cards__card__block .card__digit__number {
+  position: absolute;
+  top: -67px;
+  left: -40px;
+}
+#instruction .instruction__cards__wrapper .crystall-right {
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+  width: 106px;
+  height: 112px;
+}
+#instruction .instruction__cards__wrapper .pig-left {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  width: 220px;
+  height: 220px;
+}
+
+#tariffs {
+  text-align: center;
+}
+#tariffs .tariffs__text__title {
+  margin-bottom: 98px;
+}
+#tariffs .tariffs__grid__wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper {
+  display: flex;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff {
+  position: relative;
+  width: 360px;
+  height: 600px;
+  border-radius: 10px;
+  margin-bottom: 42px;
+  padding-left: 35px;
+  padding-right: 33px;
+  padding-top: 31px;
+  padding-bottom: 39px;
+  z-index: 10;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff:nth-child(2) {
+  margin-left: 43px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff .tariff__text__title {
+  margin-bottom: 14px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff .tariff__text__price {
+  margin-bottom: 20px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff .tariff__text__desc {
+  width: 291px;
+  height: 72px;
+  margin-bottom: 25px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff hr {
+  width: 290px;
+  margin-bottom: 15px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff button {
+  position: absolute;
+  bottom: 40px;
+  left: 15%;
+  width: 292px;
+  height: 55px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff .tariff__tags__wrapper {
+  margin-bottom: 37px;
+  text-align: left;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff .tariff__tags__wrapper .tariff__tag__item {
+  margin-bottom: 20px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__flex__wrapper .tariffs__block__tariff .tariff__tags__wrapper .tariff__tag__item img {
+  margin-right: 8px;
+}
+#tariffs .tariffs__grid__wrapper .tariffs__img__wrapper {
+  justify-self: right;
+}
+
+#about {
+  margin: 0;
+  padding: 0 120px;
+}
+#about .about__text__title {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 20px;
+}
+#about .about__grid__description {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+#about .about__grid__description .about__text__description {
+  margin-top: 50px;
+}
+#about .about__grid__description .about__text__description.fix-width {
+  max-width: 680px;
+}
+#about .about__grid__description .grid__img__wrapper {
+  justify-self: right;
+  text-align: right;
+}
+#about .about__grid__description .grid__img__wrapper img {
+  width: 50%;
+}
+#about .about__grid__tags {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+#about .about__grid__tags .about__text__description {
+  margin-bottom: 25px;
+}
+#about .about__grid__tags .about__tags__list {
+  margin-bottom: 47px;
+}
+#about .about__grid__tags .about__tags__list li {
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  max-width: 530px;
+}
+#about .about__grid__tags .about__tags__list li img {
+  position: absolute;
+  left: -30px;
+  top: 30%;
+}
+#about .about__grid__tags .grid__img__wrapper {
+  text-align: right;
+  justify-self: right;
+}
+#about .about__grid__tags .about__button__desc {
+  margin-bottom: 102px;
+}
+#about .about__grid__tags .about__button {
+  margin-bottom: 48px;
+  min-width: 330px;
+}
+#about .about__grid__tags .about__button-mobile {
+  display: none;
+}
+
+#questions {
+  text-align: center;
+  margin-top: 82px;
+  margin-bottom: 122px;
+}
+#questions .questions__text__title {
+  margin-bottom: 122px;
+}
+#questions .aq__block__wrapper {
+  text-align: left;
+}
+#questions .aq__block__wrapper .question__text__title {
+  cursor: pointer;
+  padding-bottom: 32px;
+}
+#questions .aq__block__wrapper .answer__text__title {
+  margin-top: 45.5px;
+  margin-bottom: 89px;
+}
+#questions .aq__block__wrapper .hide {
+  display: none;
+}
+#questions hr {
+  margin-bottom: 32px;
+}
+
+footer {
+  padding: 51px 120px 62px 105px;
+}
+footer .footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+footer .footer__content .footer__button__consult {
+  margin-left: 40px;
+}
+footer .footer__content .footer__menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+footer .footer__content .footer__menu a {
+  text-align: center;
+  margin-left: 84px;
+}

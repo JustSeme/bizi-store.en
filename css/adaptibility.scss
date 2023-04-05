@@ -1,0 +1,753 @@
+$accent: #8647EA;
+$background: #EFF2FC;
+$background_2: #E1DEDE;
+$black_bg: #303030;
+
+@media (min-width: 2503px) and (max-width: 2560px) {
+    .owl-carousel {
+        .carousel-item {
+            .slide__info__block {
+                .info__title__text {
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2560px) {
+    header {
+        height: 100px;
+        .header__content {
+            font-size: 40px;
+            .header__menu {
+                button {
+                    height: 60px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    #solutions {
+        .solutions__title__text {
+            font-size: 60px;
+        }
+        .owl-carousel {
+            .carousel-item {
+                .slide__marker__img {
+                    width: 90px;
+                    height: 90px;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                
+                .slide__info__block {
+                    font-size: 24px;
+                    .info__title__text {
+                        font-size: 26px;
+                    }
+                    .info__button__wrapper {
+                        .info__button {
+                            font-size: 30px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #instruction {
+        .instruction__block__description {
+            .description__desc__block {
+                .description__title__text {
+                    font-size: 60px;
+                }
+                .descrtiption__desc__text {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        .instruction__cards__wrapper {
+            .cards__title__text {
+                font-size: 70px;
+            }
+            .cards__flex__wrapper {
+                .cards__card__block {
+                    .card__text__caps {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .instruction__consult__button {
+                font-size: 40px;
+            }
+            .crystall-right {
+                height: auto;
+                width: auto;
+            }
+            .pig-left {
+                width: 300px;
+                height: 300px;
+                bottom: -120px;
+            }
+        }
+    }
+
+    #tariffs {
+        .tariffs__text__title {
+            font-size: 70px;
+        }
+
+        .tariffs__grid__wrapper {
+            .tariffs__flex__wrapper {
+                .tariffs__block__tariff {
+                    width: 420px;
+                    height: 650px;
+                    .tariff__text__title {
+                        font-size: 30px;
+                    }
+                    .tariff__text__price {
+                        font-size: 70px;
+                    }
+                    .tariff__text__desc {
+                        width: auto;
+                        height: 120px;
+                        font-size: 26px;
+                    }
+                    .tariff__tags__wrapper {
+                        .tariff__tag__item {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer__content {
+            .footer__logo {
+                font-size: 42px;
+            }
+            .footer__button__consult {
+                font-size: 40px;
+            }
+            a {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 2000px) {
+    #solutions {
+        .carousel-item {
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    #solutions {
+        .solutions__title__text {
+            font-size: 36px;
+        }
+        .owl-carousel {
+            .carousel-item {
+                min-height: 518px;
+            }
+        }
+    }
+
+    #instruction {
+        .instruction__cards__wrapper {
+            .cards__flex__wrapper {
+                .cards__card__block {
+                    width: 120px;
+                    .card__text__caps {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .header__content {
+        font-size: 24px;
+    }
+
+    #solutions {
+        .owl-carousel {
+            margin-bottom: 51px;
+            .carousel-item {
+                min-height: 538px;
+            }
+        }
+    }
+
+    #instruction {
+        .instruction__cards__wrapper {
+            .cards__flex__wrapper {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 100px;
+                .cards__card__block {
+                    
+                    width: 40%;
+                    padding: 20px;
+                    &:not(:nth-child(1), :nth-child(2)) {
+                        margin-top: 20px;
+                    }
+                    &:nth-child(5) {
+                        text-align: center;
+                        width: 85%
+                    }
+                    .card__digit__number {
+                        display: none;
+                    }
+                }
+            }
+            .pig-left {
+                left: -80px;
+            }
+        }
+    }
+
+    #tariffs {
+        margin-bottom: 50px;
+        .tariffs__grid__wrapper {
+            grid-template-columns: repeat(auto-fill, 100%);
+            .tariffs__img__wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+    #about {
+        .about__grid__tags {
+            .grid__img__wrapper {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #questions {
+        margin-bottom: 50px;
+    }
+
+    .footer__content {
+        font-size: 24px;
+        button {
+            padding: 0 5px;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 961px) {
+    header {
+        height: 100px;
+        .header__content {
+            flex-direction: column;
+            .header__menu {
+                justify-content: center;
+            }
+        }
+    }
+
+    #solutions {
+        .owl-carousel {
+            margin-bottom: 51px;
+            .owl-item {
+                .info__title__text {
+                    white-space: nowrap;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    #instruction {
+        .instruction__block__description {
+            .description__desc__block {
+                .description__title__text {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .instruction__cards__wrapper {
+            .cards__flex__wrapper {
+                margin-bottom: 120px;
+            }
+            .instruction__consult__button {
+                margin-top: 20px;
+            }
+            .pig-left {
+                left: -120px;
+            }
+            .crystall-right {
+                right: -50px;
+            }
+        }
+        .instruction__img__wrapper {
+            width: 330px;
+            position: absolute;
+            top: 40px;
+            right: -120px;
+        }
+    }
+
+    #tariffs {
+        margin: 0 23px;
+        margin-bottom: 40px;
+        .tariffs__text__title {
+            font-size: 30px;
+            margin-bottom: 21px;
+        }
+        
+        .tariffs__grid__wrapper {
+            display: flex;
+            flex-direction: column;
+            .tariffs__flex__wrapper {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .tariffs__block__tariff {
+                    width: 355px;
+                    height: 598px;
+                    margin-bottom: 18px !important;
+                    margin-left: 0 !important;
+                    button {
+                        left: 15%;
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        .about__grid__description {
+            margin-bottom: 47px;
+        }
+    }
+
+    footer {
+        .footer__content {
+            flex-direction: column;
+            .footer__menu {
+                margin-top: 15px;
+                width: 100%;
+                margin-left: 0;
+                justify-content: center;
+                a {
+                    margin-left: 33px;
+                    &:nth-child(1) {
+                        margin-left: 0;
+                    }
+                }
+                .footer__button__consult {
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 779px) {
+    .header__content {
+        font-size: 16px;
+        button {
+            font-size: 16px;
+        }
+    }
+
+    #solutions {
+        padding: 52px 15px;
+        padding-top: 120px;
+        .solutions__title__text {
+            text-align: left;
+        }
+        .solutions__button__popup {
+            padding: 14px 20px 15px 15px;
+            line-height: 0;
+            width: 260px;
+            height: 30px;
+            font-size: 15px;
+        }
+    }
+
+    #instruction {
+        margin: 0 15px;
+        margin-top: 47px;
+        margin-bottom: 50px;
+        .instruction__block__description {
+            .instruction__img__wrapper {
+                right: -15px;
+            }
+        }
+        .instruction__cards__wrapper {
+            .instruction__consult__button {
+                padding: 14px 43px 20px 41px;
+                font-size: 15px;
+                line-height: 0;
+                height: 30px;
+                width: 235px;
+            }
+            .pig-left {
+                left: -45px;
+            }
+            .crystall-right {
+                right: 20px;
+            }
+        }
+    }
+
+    #tariffs {
+        .tariffs__text__title {
+            margin-bottom: 30px;
+        }
+    }
+
+    #about {
+        padding: 0 15px;
+        padding-top: 14px;
+        padding-bottom: 26px;
+    }
+
+    #questions {
+        margin: 53px 15px;
+        .questions__text__title {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .aq__block__wrapper {
+            vertical-align: middle;
+            padding: 10px 30px;
+            padding-left: 16px;
+            color: white;
+            background: $accent;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        hr {
+            display: none;
+        }
+    }
+
+    footer {
+        height: 30px;
+        padding: 14px 23px 45px 15px;
+        .footer__content {
+            font-size: 16px;
+            button {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 629px) {
+    .header__content {
+        .header__menu {
+            button {
+                height: 30px;
+            }
+        }
+    }
+
+    #solutions {
+        padding-top: 100px;
+        padding-bottom: 36px;
+        .solutions__title__text {
+            font-size: 26px;
+            width: 330px;
+            margin-bottom: 37px;
+        }
+        .owl-carousel {
+            margin-bottom: 41px;
+            .carousel-item {
+                min-height: auto;
+                .slide__info__block {
+                    font-size: 15px;
+                    .info__button__wrapper {
+                        .info__button {
+                            height: 25px;
+                            width: 130px;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #instruction {
+        margin-bottom: 141px;
+        .instruction__block__description {
+            .description__desc__block {
+                .description__title__text {
+                    max-width: 275px;
+                    font-size: 25px;
+                    .chut-ponizhe {
+                        line-height: 0px;
+                    }
+                }
+                .descrtiption__desc__text {
+                    font-size: 15px;
+                    max-width: 191px;
+                }
+            }
+        }
+        .instruction__cards__wrapper {
+            .cards__flex__wrapper {
+                margin-bottom: 200px;
+                .cards__card__block {
+                    width: 100%;
+                    min-height: 35px;
+                    margin-left: 0;
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                    &:nth-child(5) {
+                        width: 100%;
+                    }
+                    .card__text__caps {
+                        text-align: left;
+                    }
+                }
+            }
+            .pig-left {
+                left: 155px;
+                bottom: -180px;
+            }
+            .crystall-right {
+                display: none;
+            }
+        }
+    }
+
+    #tariffs {
+        .tariffs__text__title {
+            font-size: 25px;
+            text-align: left;
+            max-width: 337px;
+            margin-top: 18px;
+        }
+        .tariffs__grid__wrapper {
+            .tariffs__flex__wrapper {
+                .tariffs__block__tariff {
+                    text-align: left;
+                    .tariff__text__title {
+                        font-size: 18px;
+                    }
+                    .tariff__text__price {
+                        font-size: 50px;
+                    }
+                    .tariff__text__desc {
+                        font-size: 16px;
+                    }
+                    hr {
+                        width: 100%;
+                    }
+                }
+            }
+            .tariffs__img__wrapper {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #about {
+        .about__text__title {
+            font-size: 25px;
+            padding: 0;
+        }
+        .about__grid__description {
+            display: block;
+            position: relative;
+            .grid__description__wrapper {
+                .about__text__description {
+                    max-width: 350px;
+                    margin-top: 18px;
+                }
+            }
+            .grid__img__wrapper {
+                position: absolute;
+                right: -15px;
+                top: 150px;
+                width: 200px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .about__grid__tags {
+            display: block;
+            .about__text__description {
+                max-width: 270px;
+            }
+            .grid__tags__wrapper {
+                .about__tags__list {
+                    li {
+                        margin-left: 15px;
+                        img {
+                            width: 8px;
+                            left: -15px;
+                            top: 40%;
+                        }
+                    }
+                }
+            }
+            .about__button {
+                display: none;
+            }
+            .about__btn__wrapper {
+                text-align: -webkit-center;
+                .about__button-mobile {
+                    display: block;
+                    margin-top: 27px;
+                    line-height: 0;
+                    font-size: 15px;
+                    height: 30px;
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    #questions {
+        .questions__text__title {
+            max-width: 282px;
+            font-size: 25px;
+        }
+        .aq__block__wrapper {
+            font-size: 15px;
+            .question__text__title {
+                padding-bottom: 10px;
+            }
+            .answer__text__title {
+                margin: 0;
+            }
+        }
+    }
+
+    footer {
+        .footer__content {
+            .footer__menu {
+                .footer__button__consult {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .header__content {
+        .header__menu {
+            a {
+                margin-left: 30px;
+            }
+            button {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    #instruction {
+        .instruction__block__description {
+            .instruction__img__wrapper {
+                width: 250px;
+                top: 70px;
+                right: -15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    #instruction {
+        .instruction__block__description {
+            .instruction__img__wrapper {
+                width: 200px;
+                top: 70px;
+                right: -15px;
+            }
+        }
+        .instruction__cards__wrapper {
+            .instruction__consult__button {
+                margin-top: 40px;
+            }
+            .pig-left {
+                left: 90px;
+            }
+        }
+    }
+
+    #tariffs {
+        .tariffs__grid__wrapper {
+            .tariffs__flex__wrapper {
+                .tariffs__block__tariff {
+                    width: 300px;
+                    button {
+                        left: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    #instruction {
+        .instruction__block__description {
+            .instruction__img__wrapper {
+                width: 150px;
+                top: 70px;
+                right: -15px;
+            }
+        }
+        .instruction__cards__wrapper {
+            .instruction__consult__button {
+                margin-top: 90px;
+            }
+            .pig-left {
+                left: 65px;
+            }
+        }
+    }
+
+    #tariffs {
+        .tariffs__grid__wrapper {
+            .tariffs__flex__wrapper {
+                .tariffs__block__tariff {
+                    width: 90%;
+                    button {
+                        left: 9%;
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        .about__grid__description {
+            .grid__img__wrapper {
+                top: 180px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
