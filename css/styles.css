@@ -102,7 +102,6 @@ section {
   width: 58px;
   height: 58px;
   align-items: center;
-  justify-content: center;
   border-radius: 50%;
 }
 #solutions .carousel-item .slide__info__block {
