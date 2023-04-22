@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gosha Sans";
-  src: local("Gosha Sans"), url("../fonts/PPGoshaSans/CodeNext-ExtraBoldItalic.otf");
+  src: local("Gosha Sans"), url("../fonts/PPGoshaSans//CodeNext-ExtraBold.otf");
 }
 @font-face {
   font-family: "Gosha Sans bold";
@@ -83,7 +83,7 @@ a:hover {
 #solutions .carousel-item .slide__marker__img {
   background: #8647EA;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Gosha Sans";
 }
 #solutions .carousel-item .slide__info__block {

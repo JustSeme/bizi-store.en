@@ -111,6 +111,9 @@ section {
             height: 58px;
             align-items: center;
             border-radius: 50%;
+            span {
+                width: 100%;
+            }
         }
         .slide__info__block {
             width: 100%;

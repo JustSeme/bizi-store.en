@@ -104,6 +104,9 @@ section {
   align-items: center;
   border-radius: 50%;
 }
+#solutions .carousel-item .slide__marker__img span {
+  width: 100%;
+}
 #solutions .carousel-item .slide__info__block {
   width: 100%;
   text-align: left;
